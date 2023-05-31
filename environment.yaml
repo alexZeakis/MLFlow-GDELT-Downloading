@@ -1,0 +1,12 @@
+name: tutorial
+channels:
+  - defaults
+dependencies:
+  - numpy>=1.14.3
+  - pandas>=1.0.0
+  - scikit-learn>0.19.1
+  - networkx
+  - editdistance
+  - pip
+  - pip:
+    - mlflow

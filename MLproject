@@ -1,0 +1,9 @@
+name: gdelt_ingest
+conda_env: environment.yaml
+entry_points:
+  main:
+    parameters:
+      date: {type: string}
+      logs: {type: string}
+      out: {type: string, default: '../data/'}
+    command: "python main.py {date} {out} {logs}"
